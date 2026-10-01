@@ -1,0 +1,23 @@
+sequenceDiagram
+    autonumber
+    participant U as User
+    participant C as User_Authentication
+    participant M as Login_database
+    participant DB as tb_sf_login
+    participant S as Session
+
+    U->>C: POST username + password
+    C->>M: login(credentials)
+    M->>DB: SELECT ... WHERE sf_name = ? AND sf_password = MD5(?)
+    DB-->>M: row or none
+    M-->>C: true / false
+
+    alt valid credentials
+        C->>M: read_user_information(username)
+        M->>DB: SELECT sf_name, sf_email, role, db_user, acnt_id
+        DB-->>M: user row
+        C->>S: store logged_in (role, dbgroup, acntid)
+        C-->>U: Admin dashboard
+    else invalid credentials
+        C-->>U: Login form + error message
+    end

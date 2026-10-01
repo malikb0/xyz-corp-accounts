@@ -1,0 +1,48 @@
+flowchart LR
+    Login["Authentication<br/>User_Authentication"]
+
+    subgraph Core["Accounts &amp; money"]
+        Accounts["Accounts"]
+        Transactions["Transactions"]
+        Owner["Owner transactions"]
+        Investments["Investments"]
+        Profits["Profits"]
+        Expenses["Expenses"]
+    end
+
+    subgraph Fleet["Fleet &amp; rentals"]
+        Vehicles["Vehicles"]
+        Rentals["Rental equipment"]
+        Trips["Trips"]
+    end
+
+    subgraph People["People"]
+        Employees["Employees"]
+        Salary["Salary slips"]
+    end
+
+    subgraph Vendors["Vendors"]
+        Contracts["Vendor contracts"]
+        VItems["Vendor items"]
+    end
+
+    subgraph Billing["Orders &amp; billing"]
+        Orders["Orders"]
+        OrderItems["Order items"]
+        Invoice["Invoice"]
+        Vat["VAT invoice"]
+        Vat1["VAT invoice (alt)"]
+        Upload["Upload invoices"]
+    end
+
+    subgraph Reports["Reports"]
+        DataReports["Data reports"]
+        GetReport["Get report"]
+    end
+
+    Login --> Core
+    Login --> Fleet
+    Login --> People
+    Login --> Vendors
+    Login --> Billing
+    Login --> Reports

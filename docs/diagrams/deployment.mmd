@@ -1,0 +1,18 @@
+flowchart LR
+    Browser["Browser"]
+
+    subgraph Compose["docker compose  (network: xyz-corp-accounts_default)"]
+        direction TB
+        App["app<br/>php:7.4-apache<br/>:8080 -> 80"]
+        DB["db<br/>mysql:5.7<br/>:3307 -> 3306"]
+        PMA["phpmyadmin<br/>:8081 -> 80"]
+        Vol[("db_data volume")]
+        Init["db/init/*.sql"]
+    end
+
+    Browser --> App
+    Browser --> PMA
+    App -->|mysqli| DB
+    PMA --> DB
+    DB --- Vol
+    Init -. first boot .-> DB

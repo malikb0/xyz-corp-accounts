@@ -1,0 +1,23 @@
+flowchart TD
+    Browser["Browser<br/>Bootstrap 3 / SB Admin 2"]
+    Apache["Apache + PHP 7.4<br/>(Docker: app)"]
+    Index["index.php<br/>CodeIgniter front controller"]
+    Router["Router (routes.php)"]
+    Auth["User_Authentication"]
+    Ctrl["Module controllers"]
+    GC["Grocery CRUD 1.6.4"]
+    Model["Models / Query Builder"]
+    DB[("MySQL")]
+    Session[("Session (files)")]
+
+    Browser -->|HTTP| Apache
+    Apache --> Index
+    Index --> Router
+    Router --> Auth
+    Router --> Ctrl
+    Auth --> Session
+    Ctrl --> GC
+    Ctrl --> Model
+    GC --> Model
+    Model --> DB
+    Browser -.->|static assets| Apache

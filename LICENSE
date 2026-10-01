@@ -1,0 +1,64 @@
+STUDY-ONLY SOURCE LICENSE
+Source-available — free to use, run, test, self-host and share for non-commercial
+study, testing and evaluation. Not an open-source licence.
+
+Copyright (c) 2016-2022 Malik Awais. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and its associated documentation, to use, copy, modify, run, test,
+self-host and share the software and modified versions of it, for personal,
+educational, evaluation and other non-commercial study purposes only, subject to
+the conditions below.
+
+WHAT YOU MAY DO
+
+You may, for the permitted non-commercial study purposes above:
+
+  a. run, test and self-host the software, locally or on a server you control,
+     including to demonstrate or evaluate it;
+
+  b. modify it and create derivative works; and
+
+  c. share copies and modified versions with others, provided you meet the
+     conditions below.
+
+CONDITIONS
+
+1. Non-commercial. You may not use this software, in whole or in part, for any
+   commercial purpose, and you may not run it in a live or production business
+   environment. It is provided for study, testing, evaluation and demonstration
+   only.
+
+2. No production use. This software is not production-ready and must not be
+   operated as, or as part of, a production or business-critical system.
+
+3. No misrepresentation. You may not present this software, or any modified
+   version of it, as your own original work. You may not remove, hide or alter
+   this licence, the copyright notice above, or any attribution notice.
+
+4. Attribution and same terms. Any copy, modified version or permitted sharing
+   must retain this licence and the copyright notice, must clearly credit the
+   original author, and must make clear if it is a modified copy. Any copy or
+   modified version you share must be offered under these same terms. You may not
+   sell, rent, sublicense or otherwise charge for the software.
+
+5. Third-party components. This project bundles third-party libraries that remain
+   under their own licences (for example CodeIgniter — MIT; Grocery CRUD —
+   MIT/GPL-3.0; the SB Admin 2 theme — MIT). Those licences govern those
+   components only and are recorded in docs/THIRD-PARTY.md, with licence texts
+   under licenses/ and inside the relevant bundled directories.
+
+NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+NOT OPEN SOURCE
+
+This licence grants study, testing and evaluation rights only. It does not grant
+the freedoms of an open-source licence (for example, commercial use or production
+deployment). For any use beyond non-commercial study, contact the copyright holder.

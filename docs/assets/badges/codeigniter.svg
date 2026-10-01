@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="20" role="img" aria-label="CodeIgniter: 3.1.13">
+  <rect width="89" height="20" fill="#555"/>
+  <rect x="89" width="54" height="20" fill="#EF4223"/>
+  <g fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" text-anchor="middle">
+    <text x="44" y="14">CodeIgniter</text>
+    <text x="116" y="14">3.1.13</text>
+  </g>
+</svg>

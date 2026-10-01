@@ -1,0 +1,10 @@
+# Build context exclusions for Docker.
+.git
+.env
+db/private
+docs
+**/*.md
+*.tar.gz
+application/cache/*
+application/logs/*
+assets/uploads/files/*

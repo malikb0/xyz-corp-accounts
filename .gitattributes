@@ -1,0 +1,31 @@
+# Normalise line endings for our own text files; never munge vendored bundles.
+* text=auto
+
+*.php   text diff=php
+*.html  text
+*.css   text
+*.js    text
+*.md    text
+*.sql   text
+*.yml   text
+*.yaml  text
+*.json  text
+*.sh    text eol=lf
+
+# Binary assets
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.ttf   binary
+*.z     binary
+*.db    binary
+*.pdf   binary
+*.svg   text
+
+# Third-party bundles: leave bytes untouched (prevents churn / breakage)
+system/**                  -text
+assets/grocery_crud/**     -text
+admin_resources/**         -text
+application/views/I18N/**  -text

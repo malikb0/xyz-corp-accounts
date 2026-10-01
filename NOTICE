@@ -1,0 +1,30 @@
+xyz-corp-accounts — Accounts & Operations System
+Copyright (c) 2016-2022 Malik Awais. All rights reserved.
+
+This project is licensed under the Study-Only Source License (see LICENSE):
+source-available for non-commercial study, testing and evaluation. You may run,
+test, self-host and share it for those purposes, but not use it commercially or in
+production, and not present it as your own work. It is not open source. See the
+README's "Licence" section for a plain-language summary.
+
+Third-party components
+----------------------
+This project bundles third-party libraries that remain under their own licences.
+Those licences govern those components only. Principal components:
+
+  CodeIgniter 3.1.13 ........................ MIT
+  Grocery CRUD 1.6.4 ........................ MIT (or GPL-3.0)
+  SB Admin 2 (Start Bootstrap) .............. MIT
+  Bootstrap 3, jQuery, jQuery UI ............ MIT
+  metisMenu, raphael, printThis ............. MIT
+  Font Awesome ............................. CC BY 4.0 / SIL OFL / MIT
+  I18N Arabic (Khaled Al-Shamali) ........... LGPL
+
+The full inventory is in docs/THIRD-PARTY.md; licence texts are under licenses/
+and inside the relevant bundled directories.
+
+Non-affiliation
+---------------
+This is the author's own reference implementation. It is not affiliated with,
+endorsed by, or connected to any of the third-party projects named above, nor to
+any former client or employer.

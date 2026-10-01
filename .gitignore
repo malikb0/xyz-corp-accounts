@@ -1,0 +1,36 @@
+# --- Local environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Local database dumps (kept out of version control) ---
+db/private/
+*.sql.gz
+!db/schema.sql
+dumps/
+
+# --- CodeIgniter runtime ---
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+
+# --- Uploaded files (keep the folders, drop their contents) ---
+assets/uploads/files/*/*
+!assets/uploads/files/*/index.html
+
+# --- Composer ---
+/vendor/
+composer.lock
+
+# --- Docker / OS cruft ---
+*:Zone.Identifier
+.DS_Store
+Thumbs.db
+*.tar.gz
+*.bak
+
+# --- Editors ---
+.idea/
+.vscode/
+*.swp
